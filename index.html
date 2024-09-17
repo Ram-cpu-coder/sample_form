@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- -----------------------------------------------contact form ------------------------------- -->
+    <div class="container">
+        <h1>Contact Form</h1>
+
+        <hr>
+        <div id="form">
+
+            <form action="http://www.google.com" method="get">
+
+                <div class="input-perso-info">
+
+                    <!-- Full Name -->
+                    <label for="name-data" id="label-name">Name</label>
+                    <div id="name-data">
+                        <input type="text" name="First" placeholder="First" id="first" required>
+                        <input type="text" name="Last" placeholder="Last" id="second" required>
+                    </div>
+
+
+                    <div class="label-data">
+                        <label for="email">Email</label>
+                        <div class="contact-label">
+                            <label for="number">Contact-number</label>
+                        </div>
+                    </div>
+
+                    <div class="input-data">
+                        <!-- email -->
+                        <input type="email" name="Email" id="email" placeholder="john@example.com" required>
+                        <!-- Contact-number -->
+                        <input type="number" id="number" name="Contact Number" placeholder="Contact Number" required>
+                    </div>
+
+                    <div class="second-row">
+
+                        <div class="label-second-row">
+                            <label for="position">What position are you applying for?</label>
+                            <div class="availability-label">
+                                <label for="date">Available date</label>
+                            </div>
+                        </div>
+
+                        <div class="input-second-row">
+                            <!-- position -->
+
+                            <div class="position-div data">
+                                <select name="Position" id="position">
+                                    <option value="Help-Desk">Help-Desk</option>
+                                    <option value="Lecturer">Lecturer</option>
+                                    <option value="IT-Manager">IT Manager</option>
+                                    <option value="Full-Stack-Developer">Full Stack Developer</option>
+                                </select>
+                            </div>
+
+                            <!-- availability -->
+                            
+                                <input type="date" name="Date" id="date">
+                            
+                        </div>
+                    </div>
+
+                    
+                <!-- Employee-Status -->
+                <div class="employee-status-div">
+                    <label for="Emp-status-div Emp-status-radio2">Current Employee-Status</label>
+                    
+                    <div class="emp-status-row">
+                        <div id="Emp-status-radio">
+                            
+                            <div class="one">
+
+                                <input type="radio" name="radio" id= "opt1" value="Self-Employed">
+                                <label for="opt1">Self-Employed</label>
+                            </div>
+                            <div class="two">
+
+                                <input type="radio" name="radio"id = "opt2" value="Employed">
+                                <label for="opt2">Employed</label>
+                            </div>
+                        </div>
+                        
+                        <div id="Emp-status-radio2">
+                            <div class="three">
+
+                                <input type="radio" name="radio"id = "opt3" value="Unemployed">
+                                <label for="opt3">Unemployed</label>
+                            </div>
+                            <div class="four">
+
+                                <input type="radio" name="radio"id = "opt4" value="Student">
+                                <label for="opt4">Student</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                </div>
+                  <!-- button -->
+                  <div class="buttons">
+                    <button type="reset" id="reset">Reset</button>
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+                </form>
+        </div>
+    </div>
+</body>
+
+</html>

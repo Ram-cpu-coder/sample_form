@@ -5,7 +5,7 @@
 }
 
 body {
-    background: darkgrey;
+    background: linear-gradient(90deg, #21960c, #0f7794);
     color: white;
     font-size: 23px;
 }
@@ -40,8 +40,10 @@ li{
 }
 
 nav li a{
-    color: black;
+    color: white;
     text-decoration: none;
+    font-family: "Nunito", sans-serif;
+
 
 }
 .container {
@@ -54,33 +56,33 @@ nav li a{
 }
 
 h1 {
+    font-family: "Dosis", sans-serif;
     text-align: center;
     margin-top: 10px;
     font-size: 50px;
 }
 
 hr {
-    width: 75vw;
+    width: 10vw;
     margin: auto;
     margin-top: 10px;
 }
 
 #form {
+    font-family: "Asap", sans-serif;
     margin: auto;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 80px 20px;
     height: 30vw;
     padding: 10px 20px;
-    width: 35vw;
+    width: 40vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin-top: 30px;
-    background: transparent;
-    color: black;
+    background: white;
+    color: rgb(52, 52, 52);
     box-shadow: 0 12px 22px 12px rgb(0, 0, 0, 0.6);
-   
-
 }
 
 input {
@@ -88,6 +90,15 @@ input {
     border-radius: 5px;
     height: 25px;
     padding: 0 10px;
+}
+.input-perso-info{
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 35px;
+    margin-bottom: -5px;
+}
+label{
+    font-size: 18 px;
 }
 
 
@@ -158,7 +169,7 @@ input {
     /* border: 2px solid red; */
 
     position: absolute;
-    left: 54vw;
+    left: 56vw;
 }
 
 /* -------------------------------------------------Email and contact-number     END----------------------------------- */
@@ -196,7 +207,7 @@ input {
 
 .availability-label {
     position: absolute;
-    left: 54vw;
+    left: 56vw;
 }
 
 /* -------------------------------------------------Second row- END---------------------------------- */
@@ -250,28 +261,42 @@ input {
 .three{
     margin-left: -1vw;
 }
-
+/* -------------------------------------------------------------buttons------------------------------------------------- */
 
 .buttons{
     display: flex;
     flex-direction: row;
     justify-content: center;
     /* border: 2px solid red; */
-    margin: 30px 0;
-    gap: 15px;
+    margin: 40px 0;
+    gap: 40px;
+    
 }
 #reset{
     background: rgb(226, 224, 223);
     border: 0.5 solid black;
-    width: 5vw;
-    border-radius: 6px;
+    width: 7vw;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: 23px;
+    padding: 8px 20px;
 }
 #submit{
     background: rgb(18, 18, 18);
     border: 0.5 solid rgb(198, 197, 197);
     color: aliceblue;
-    width: 5vw;
-    border-radius: 6px;
+    width: 7vw;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: 23px;
+    padding: 8px 20px;
+}
+
+#reset:hover{
+    background: rgb(125, 124, 124);
+    color: whitesmoke;
+}
+#submit:hover{
+    background: rgb(125, 124, 124);
+    color:whitesmoke;
 }

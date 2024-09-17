@@ -9,43 +9,48 @@ body {
     color: white;
     font-size: 23px;
 }
-header{
+
+header {
     display: flex;
     flex-direction: column;
 }
-nav{
+
+nav {
     border-bottom: 2px solid black;
     /* border: 2px solid red; */
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     width: 100%;
     height: 40px;
     margin-top: 10px;
     flex-wrap: wrap;
-    
-   
+
+
 }
-ul{
+
+ul {
     display: flex;
     flex-direction: row;
-    /* margin-right: 30vw; */
+
 }
-li{
-   align-items: center; 
-   /* border: 2px solid blue; */
+
+li {
+    align-items: center;
+    /* border: 2px solid blue; */
     list-style: none;
     margin: 0 23px;
     padding: 4px 0;
 }
 
-nav li a{
+nav li a {
     color: white;
     text-decoration: none;
     font-family: "Nunito", sans-serif;
 
 
 }
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -74,10 +79,9 @@ hr {
     border: 1px solid white;
     border-radius: 80px 20px;
     min-height: (28vw, 30vw);
-    /* height: 30vw;
-    min-height: 30vw; */
     padding: 10px 20px;
-    min-width: 40vw;
+    width: 40vw;
+    min-width: (30vw);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -85,6 +89,7 @@ hr {
     background: white;
     color: rgb(52, 52, 52);
     box-shadow: 0 12px 22px 12px rgb(0, 0, 0, 0.6);
+
 }
 
 input {
@@ -92,15 +97,19 @@ input {
     border-radius: 5px;
     height: 25px;
     padding: 0 10px;
+    flex-wrap: wrap;
+
 }
-.input-perso-info{
-    margin:35px 10px -5px 20px ;
+
+.input-perso-info {
+    margin: 35px 10px -5px 20px;
     /* margin-left: 20px; */
     /* margin-right: 10px; */
     /* margin-top: 35px; */
     /* margin-bottom: -5px; */
 }
-label{
+
+label {
     font-size: 18 px;
 }
 
@@ -122,12 +131,12 @@ label{
 }
 
 #first {
-    width: 15.5vw;
+    width: 40%;
 
 }
 
 #second {
-    width: 15.5vw;
+    width: 40%;
 
 }
 
@@ -161,32 +170,34 @@ label{
 
 
 #email {
-    width: 19vw;
+    width: 60%;
 }
 
 #number {
-    width: 12vw;
+    width: 30%;
 }
 
-.contact-label {
-    /* border: 2px solid red; */
 
-    position: absolute;
-    left: 56vw;
-}
 
 /* -------------------------------------------------Email and contact-number     END----------------------------------- */
 /* -------------------------------------------------Second row----------------------------------- */
-
+.second-row {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   width: 100%;
+}
 
 .label-second-row {
-    font-size: 20px;
     display: flex;
     flex-direction: row;
+    font-size: 20px;
+    /* border: 2px solid red; */
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 10px; 
 }
 
 .input-second-row {
@@ -196,110 +207,122 @@ label{
     justify-content: space-between;
     width: 100%;
     margin-top: 5px;
+    /* border: 2px solid red; */
 }
 
 #date {
-    width: 12vw;
+    width: 100%;
     height: 25px;
 }
 
 #position {
-    width: 12vw;
+    width: 90%;
     height: 25px;
 }
 
-.availability-label {
-    position: absolute;
-    left: 56vw;
-}
 
 /* -------------------------------------------------Second row- END---------------------------------- */
 
 /* -------------------------------------------------Employee Status----------------------------------- */
-.employee-status-div {
+.employee-status-div{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 20px;
 
 }
-
-.emp-status-row {
+.emp-status-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px;
+    /* border: 2px solid red; */
+}
+.emp-status-radio1{
     display: flex;
     flex-direction: column;
-    font-size: 18px;
-    margin-top: 10px;
-    /* border: 3px solid blue ; */
-    padding: 5px;
+    width: 40%;
+}
+.emp-status-radio2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
 
-    
-    
-}
-#Emp-status-radio2{
-    width: 100%;
+
+
+.one {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    
-    /* border: 3px solid red ; */
-    margin-top: 10px;
-    gap: 250px;
-    text-align: center;
-    
+    justify-content: flex-start;
+    gap: 10px;
+    /* border: 2px solid rgb(21, 164, 207); */
 }
-#Emp-status-radio{
-    width: 100%;
+
+.two {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    
-    /* border: 2px solid red ; */
-    gap: 250px;
-    text-align: center;
-    
-}
-.one{
-    margin-left: 0vw;
+    justify-content: flex-start;
+    gap: 10px;
+    /* border: 2px solid green; */
 }
 .three{
-    margin-left: -1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    /* border: 2px solid blue; */
+}
+.four{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    /* border: 2px solid yellow; */
 }
 /* -------------------------------------------------------------buttons------------------------------------------------- */
 
-.buttons{
+.buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     /* border: 2px solid red; */
-    margin: 40px 0;
-    gap: 40px;
+    gap: 25px;
     
 }
-#reset{
+
+#reset {
     background: rgb(226, 224, 223);
     border: 0.5 solid black;
     width: 7vw;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 23px;
     padding: 8px 20px;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.6);
+   
 }
-#submit{
+
+#submit {
     background: rgb(18, 18, 18);
     border: 0.5 solid rgb(198, 197, 197);
     color: aliceblue;
     width: 7vw;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 23px;
     padding: 8px 20px;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.6);
 }
 
-#reset:hover{
+#reset:hover {
     background: rgb(125, 124, 124);
     color: whitesmoke;
 }
-#submit:hover{
+
+#submit:hover {
     background: rgb(125, 124, 124);
-    color:whitesmoke;
+    color: whitesmoke;
 }

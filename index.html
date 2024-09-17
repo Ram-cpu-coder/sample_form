@@ -7,14 +7,18 @@
     <title>Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Dosis:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Dosis:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -47,7 +51,7 @@
                         <input type="text" name="Last" placeholder="Last" id="second" required>
                     </div>
 
-
+                    <!-- --------------------------------------------first row------------------------------------------------ -->
                     <div class="label-data">
                         <label for="email">Email</label>
                         <div class="contact-label">
@@ -61,14 +65,20 @@
                         <!-- Contact-number -->
                         <input type="number" id="number" name="Contact Number" placeholder="Contact Number" required>
                     </div>
-
+                    <!-- ------------------------second row------------------------------- -->
                     <div class="second-row">
 
                         <div class="label-second-row">
-                            <label for="position">What position are you applying for?</label>
-                            <div class="availability-label">
+                            <div class="position">
+
+                                <label for="position">What position are you applying for?</label>
+                            </div>
+
+                            <div class="availability">
+
                                 <label for="date">Available date</label>
                             </div>
+
                         </div>
 
                         <div class="input-second-row">
@@ -84,55 +94,58 @@
                             </div>
 
                             <!-- availability -->
-                            
+                            <div class="input-availability">
                                 <input type="date" name="Date" id="date">
-                            
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------Employee Status-------------------------------------------------------- -->
+                    <!-- Employee-Status -->
+                    <div class="employee-status-div">
+                        <label for="Emp-status-div Emp-status-radio2">Current Employee-Status</label>
+
+                        <div class="emp-status-row">
+                            <div id="emp-status-radio1">
+
+                                <div class="one">
+
+                                    <input type="radio" name="radio" id="opt1" value="Self-Employed">
+                                    <label for="opt1">Self-Employed</label>
+                                </div>
+                                <div class="two">
+
+                                    <input type="radio" name="radio" id="opt2" value="Employed">
+                                    <label for="opt2">Employed</label>
+                                </div>
+                            </div>
+
+                            <div class="emp-status-radio2">
+
+                                <div class="three">
+
+                                    <input type="radio" name="radio" id="opt3" value="Unemployed">
+                                    <label for="opt3">Unemployed</label>
+                                </div>
+                                <div class="four">
+
+                                    <input type="radio" name="radio" id="opt4" value="Student">
+                                    <label for="opt4">Student</label>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-                    
-                <!-- Employee-Status -->
-                <div class="employee-status-div">
-                    <label for="Emp-status-div Emp-status-radio2">Current Employee-Status</label>
-                    
-                    <div class="emp-status-row">
-                        <div id="Emp-status-radio">
-                            
-                            <div class="one">
-
-                                <input type="radio" name="radio" id= "opt1" value="Self-Employed">
-                                <label for="opt1">Self-Employed</label>
-                            </div>
-                            <div class="two">
-
-                                <input type="radio" name="radio"id = "opt2" value="Employed">
-                                <label for="opt2">Employed</label>
-                            </div>
-                        </div>
-                        
-                        <div id="Emp-status-radio2">
-                            <div class="three">
-
-                                <input type="radio" name="radio"id = "opt3" value="Unemployed">
-                                <label for="opt3">Unemployed</label>
-                            </div>
-                            <div class="four">
-
-                                <input type="radio" name="radio"id = "opt4" value="Student">
-                                <label for="opt4">Student</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                    <!-- ---------------------------------------------------------------Employee Status-------------------------------------------------------- -->
 
                 </div>
-                  <!-- button -->
-                  <div class="buttons">
+                <!-- button -->
+                <div class="buttons">
                     <button type="reset" id="reset">Reset</button>
                     <button type="submit" id="submit">Submit</button>
                 </div>
-                </form>
+            </form>
         </div>
     </div>
 </body>

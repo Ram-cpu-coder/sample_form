@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -25,8 +25,6 @@ nav {
     height: 40px;
     margin-top: 10px;
     flex-wrap: wrap;
-
-
 }
 
 ul {
@@ -47,16 +45,14 @@ nav li a {
     color: white;
     text-decoration: none;
     font-family: "Nunito", sans-serif;
-
-
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     margin: auto;
     margin-top: 10px;
+    flex-wrap: wrap;
 
 }
 
@@ -78,65 +74,59 @@ hr {
     margin: auto;
     border: 1px solid white;
     border-radius: 80px 20px;
-    min-height: (28vw, 30vw);
-    padding: 10px 20px;
-    width: 40vw;
-    min-width: (30vw);
+    min-height: 40vh;
+    height: 60vh;
+    width: 60%%;
+    
+
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     margin-top: 30px;
     background: white;
     color: rgb(52, 52, 52);
     box-shadow: 0 12px 22px 12px rgb(0, 0, 0, 0.6);
-
+   
 }
 
-input {
-    border: 1px solid;
-    border-radius: 5px;
-    height: 25px;
-    padding: 0 10px;
-    flex-wrap: wrap;
 
-}
 
 .input-perso-info {
-    margin: 35px 10px -5px 20px;
-    /* margin-left: 20px; */
-    /* margin-right: 10px; */
-    /* margin-top: 35px; */
-    /* margin-bottom: -5px; */
+margin: 35px 10px -5px 20px;
+width: 34rem;
+display:flex;
+flex-direction: column;
+/* flex-wrap: wrap; */
+margin-left: 20px;
+margin-right: 10px;
+margin-top: 35px;
+margin-bottom: -5px;
 }
-
-label {
-    font-size: 18 px;
-}
-
 
 /* ----------------------------------------------name----------------------------------------------- */
+
 #label-name {
-    font-size: 20px;
+font-size: 20px;
 }
 
 #name-data {
-    /* border: 2px solid red; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 10px;
-    font-size: 18px;
+border: 2px solid red;
+display: flex;
+/* flex-wrap: wrap; */
+justify-content: space-between;
+width: 100%;
+margin-top: 10px;
+font-size: 18px;
 
 }
 
 #first {
-    width: 40%;
+width: 40%;
 
 }
 
 #second {
-    width: 40%;
+width: 40%;
 
 }
 
@@ -146,7 +136,7 @@ label {
 .label-data {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     margin-top: 10px;
     /* border: 2px solid blue;  */
@@ -158,7 +148,7 @@ label {
 .input-data {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* border: 2px solid blue; */
     border-radius: 8px;
     font-size: 20px;
@@ -181,50 +171,56 @@ label {
 
 /* -------------------------------------------------Email and contact-number     END----------------------------------- */
 /* -------------------------------------------------Second row----------------------------------- */
-.second-row {
-    /* border: 2px solid blue; */
+.second-col {
+    border: 2px solid green;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30rem;
+    gap: 10px;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.first-row {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-   width: 100%;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    width: 60%;
+    border: 2px solid blue;
 }
 
-.label-second-row {
+.second-row {
     display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    /* border: 2px solid red; */
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 10px; 
+    flex-direction: column;
+    border: 2px solid red;
+    /* flex-wrap: wrap; */
+    width: 35%;
+    justify-content: space-evenly;
 }
 
-.input-second-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 5px;
-    /* border: 2px solid red; */
+.second-row>div {
+    margin-left: 65px;
+}
+
+.first-row>div {}
+
+#position {
+    margin-top: 10px;
 }
 
 #date {
-    width: 100%;
-    height: 25px;
-}
-
-#position {
-    width: 90%;
-    height: 25px;
+    margin-top: 10px;
 }
 
 
 /* -------------------------------------------------Second row- END---------------------------------- */
 
 /* -------------------------------------------------Employee Status----------------------------------- */
-.employee-status-div{
+.employee-status-div {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -232,7 +228,8 @@ label {
     font-size: 20px;
 
 }
-.emp-status-row{
+
+.emp-status-row {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -240,12 +237,14 @@ label {
     margin: 10px;
     /* border: 2px solid red; */
 }
-.emp-status-radio1{
+
+.emp-status-radio1 {
     display: flex;
     flex-direction: column;
     width: 40%;
 }
-.emp-status-radio2{
+
+.emp-status-radio2 {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -258,7 +257,7 @@ label {
     flex-direction: row;
     justify-content: flex-start;
     gap: 10px;
-    /* border: 2px solid rgb(21, 164, 207); */
+    border: 2px solid rgb(21, 164, 207);
 }
 
 .two {
@@ -266,31 +265,34 @@ label {
     flex-direction: row;
     justify-content: flex-start;
     gap: 10px;
-    /* border: 2px solid green; */
+    /* /* border: 2px solid green; */
 }
-.three{
+
+.three {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 10px;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
 }
-.four{
+
+.four {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 10px;
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
 }
+
 /* -------------------------------------------------------------buttons------------------------------------------------- */
 
 .buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     gap: 25px;
-    
+
 }
 
 #reset {
@@ -302,7 +304,7 @@ label {
     padding: 8px 20px;
     font-size: 20px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.6);
-   
+
 }
 
 #submit {

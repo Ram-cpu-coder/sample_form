@@ -43,47 +43,40 @@
             <form action="http://www.google.com" method="get">
 
                 <div class="input-perso-info">
+                    <div class="name-div">
 
-                    <!-- Full Name -->
-                    <label for="name-data" id="label-name">Name</label>
-                    <div id="name-data">
-                        <input type="text" name="First" placeholder="First" id="first" required>
-                        <input type="text" name="Last" placeholder="Last" id="second" required>
-                    </div>
-
-                    <!-- --------------------------------------------first row------------------------------------------------ -->
-                    <div class="label-data">
-                        <label for="email">Email</label>
-                        <div class="contact-label">
-                            <label for="number">Contact-number</label>
+                        <!-- Full Name -->
+                        <label for="name-data" id="label-name">Name</label>
+                        <div id="name-data">
+                            <input type="text" name="First" placeholder="First" id="first" required>
+                            <input type="text" name="Last" placeholder="Last" id="second" required>
                         </div>
                     </div>
+                    <div class="email-and-contact">
 
-                    <div class="input-data">
-                        <!-- email -->
-                        <input type="email" name="Email" id="email" placeholder="john@example.com" required>
-                        <!-- Contact-number -->
-                        <input type="number" id="number" name="Contact Number" placeholder="Contact Number" required>
+                        <!-- --------------------------------------------first row------------------------------------------------ -->
+                        <div class="label-data">
+                            <label for="email">Email</label>
+                            <div class="contact-label">
+                                <label for="number">Contact-number</label>
+                            </div>
+                        </div>
+
+                        <div class="input-data">
+                            <!-- email -->
+                            <input type="email" name="Email" id="email" placeholder="john@example.com" required>
+                            <!-- Contact-number -->
+                            <input type="number" id="number" name="Contact Number" placeholder="Contact Number"
+                                required>
+                        </div>
                     </div>
                     <!-- ------------------------second row------------------------------- -->
-                    <div class="second-row">
+                    <div class="second-col">
 
-                        <div class="label-second-row">
+                        <div class="first-row">
                             <div class="position">
-
                                 <label for="position">What position are you applying for?</label>
                             </div>
-
-                            <div class="availability">
-
-                                <label for="date">Available date</label>
-                            </div>
-
-                        </div>
-
-                        <div class="input-second-row">
-                            <!-- position -->
-
                             <div class="position-div data">
                                 <select name="Position" id="position">
                                     <option value="Help-Desk">Help-Desk</option>
@@ -92,12 +85,15 @@
                                     <option value="Full-Stack-Developer">Full Stack Developer</option>
                                 </select>
                             </div>
+                        </div>
 
-                            <!-- availability -->
+                        <div class="second-row">
+                            <div class="availability">
+                                <label for="date">Available date</label>
+                            </div>
                             <div class="input-availability">
                                 <input type="date" name="Date" id="date">
                             </div>
-
                         </div>
                     </div>
                     <!-- ---------------------------------------------------------------Employee Status-------------------------------------------------------- -->
